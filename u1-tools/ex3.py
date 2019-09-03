@@ -1,6 +1,5 @@
-
-zip = int(input())
 all_zips = {}
+zip = int(input())
 while(zip != 0):
     if zip not in all_zips:
         all_zips[zip] = 1
