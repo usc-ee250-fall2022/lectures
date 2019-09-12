@@ -2,6 +2,8 @@ import requests
 import json
 
 r = requests.get('https://api.github.com/orgs/usc-ee250-fall2019/repos')
+print("Headers:\n" + str(r.headers))
+
 if r.status_code == 200:
     repos = r.json()
     for repo in repos:
