@@ -10,7 +10,6 @@ def do_avg():
     if(len(scores) == 0):
         return "No scores"
     #return str(sum(scores)/len(scores))
-#    return render_template('result.html', mycount="hi", myavg="bye")
     return render_template('result.html', mycount=str(len(scores)), myavg=str(sum(scores)/len(scores)))
 
 @app.route("/lookup", methods=["GET"])
