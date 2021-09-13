@@ -1,7 +1,7 @@
 import requests
 import json
 
-r = requests.get('https://api.github.com/orgs/usc-ee250-fall2020/repos')
+r = requests.get('https://api.github.com/orgs/usc-ee250-fall2021/repos')
 print("Headers:\n" + str(r.headers))
 
 if r.status_code == 200:
