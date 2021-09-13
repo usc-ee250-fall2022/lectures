@@ -11,11 +11,11 @@ e = xml_person.getroot()
 friends = e.find("friends")
 
 # Get attribute tuples (everything is a string)
-for f in friends.getchildren():
+for f in list(friends):
     print(f.text)
 
 # Iterate over child elements
 scores = e.find("scores")
-for score in scores.getchildren():
+for score in list(scores):
     print(score.get("id"), score.text)
 
